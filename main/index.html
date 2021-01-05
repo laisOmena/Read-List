@@ -3,23 +3,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <script src="https://kit.fontawesome.com/84c826a6a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Style/style.css">
+
     <title>Read List</title>
 </head>
 <body>
     <main>
         <header>
             <nav>
-                <section>
-                    <h3 class="title">Read List</h3>
-
-                    <a href="#aboutUs">Sobre nós</a>
-                    <button name="login" type="button">Login</button>
-                    <button name="register" type="button">Cadastrar</button>
-                </section>
-
+                <ul class="nav_links">
+                    <li>
+                        <a id="logo" href="#">Read List</a>
+                    </li>
+                    <li>
+                        <a name="aboutUs" type="button">Sobre nós</a>
+                    </li>
+                </ul>
             </nav>
+            <a href="#" id="login">
+                <button name="login" type="button">Login</button>
+            </a>
+            <a href="#">
+                <button id="register" name="register" type="button">Cadastrar</button>
+            </a>
         </header>
         <div>
             <section>
@@ -51,29 +58,29 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fab fa-twitter"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fas fa-google-play    "></i>
+                            <i class="fab fa-google-play"></i>
                         </a>
                     </li>
                 </ul>
             </div>
             <div>
                 <p>
-                    <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2021
+                    &copy; Copyright 2021
                 </p>
             </div>
         </footer>
