@@ -17,7 +17,7 @@ li, a, button {
 
 header {
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-end;
     align-items: center;
     padding: 30px 10%;
 }
@@ -29,6 +29,7 @@ header {
     color: #583387;
 
     cursor: pointer;
+    margin-right: auto;
     
 }
 
@@ -71,6 +72,7 @@ button {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
 button:hover {
