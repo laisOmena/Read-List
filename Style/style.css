@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sura&family=Unna&display=swap');
 
+:root {
+    --cor-texto: #2D2B2B;
+    --cor-button: #8F59D2;
+    --cor-button-dark: #583387;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +18,9 @@ li, a, button {
     font-weight: 400;
     font-size: 14px;
     text-decoration: none;
-    color: #151414;
+    color: var(--cor-texto);
+    list-style: none;
+    outline-style: none;
 }
 
 header {
@@ -33,17 +41,17 @@ header {
     
 }
 
-#register {
+.register {
     font-family: 'Unna', serif;
     font-weight: 400;
     font-size: 18px;
     color: #F0F5FA;
-    background-color: #8F59D2;
+    background-color: var(--cor-button);
     border-radius: 50px;
 }
 
-#register:hover {
-    background-color: #583387;
+.register:hover {
+    background-color: var(--cor-button-dark);
 }
 
 .nav_links {
@@ -59,11 +67,12 @@ header {
 .nav_links li a {
     align-items: center;
     transition: all 0.3s ease 0s;
-    cursor: pointer;
+    cursor: pointer;   
 }
 
 .nav_links li a:hover {
-    color: #583387;
+    color: var(--cor-button-dark);
+    
 }
 
 button {
@@ -76,6 +85,69 @@ button {
 }
 
 button:hover {
-    background-color: #8F59D2;
+    background-color: var(--cor-button);
     color: #F0F5FA;
+}
+
+section {
+    font-family: 'Unna', serif;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.first{
+    margin: auto;
+    display:inline-table;
+    color: var(--cor-texto);
+
+}
+
+.first, h1 {
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+#big {
+    font-size: 26px;
+    width: 320px;
+    margin-top: 8%;
+}
+
+img {
+    display:table-column;
+    float: right;
+    width: 50%;
+}
+
+.oneFirst {
+    display: table-column;
+    float: left;
+    width: 50%;
+    padding-top: 12%;
+    line-height: 3em;
+    font-size:18px;
+    font-weight: 400;
+    
+}
+
+li {
+    text-indent: 1.5em;
+    
+}
+
+.second {
+    display: grid;
+    align-items: center;
+    padding: 15% 30%;
+    text-align: center;
+    color: var(--cor-texto);
+}
+
+ h2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 3em;
 }
